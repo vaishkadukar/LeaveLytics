@@ -1,0 +1,141 @@
+.myButton:hover {
+  background-color: #c2c0c0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.next-page-header {
+  width: 100%;
+  height: min-content;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.myButton {
+  width: 10%;
+  margin-left: 2rem;
+}
+
+.left-container {
+  width: 80%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+@media (max-width: 768px) {
+  .next-page-header {
+    height: min-content;
+    flex-direction: column;
+  }
+
+  .myButton {
+    width: 20%;
+  }
+
+  .left-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .today {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 0.5rem;
+  }
+
+  .today p:last-child {
+    width: min-content;
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    height: min-content;
+  }
+
+  .planned,
+  .unplanned {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+.today {
+  padding: 1rem;
+  width: 100%;
+}
+
+.today .today-day {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.today .today-date {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.middle-section .planned,
+.middle-section .unplanned {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 130px;
+  width: 160px;
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  border: 3px solid #2779f2;
+  text-align: center;
+}
+
+.middle-section .planned p:first-child,
+.middle-section .unplanned p:first-child {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.middle-section .planned p:last-child,
+.middle-section .unplanned p:last-child {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.cell_inside {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.css-axafay-MuiDataGrid-virtualScroller {
+  overflow-y: hidden !important;
+}
